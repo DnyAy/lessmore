@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>小米用户注册</title>
+  <link rel="stylesheet" href="css/register.css"/>
+	<script src="js/jquery-3.2.1.js"></script>
+	<!--IE8只能支持jQuery1.9-->
+	<!--[if lte IE 8]>
+	<script src="js/jquery.min1.90.js"></script>
+	<![endif]-->
+  <script src="js/jquery.citys.js"></script>
+  <script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+</head>
+<body>
+
+  <div class="warpper">
+    <img src="./img/logo.jpg" />
+    <h4>注册小米帐号</h4>
+    <form id="getForm" method="post" name="fm" action="ok.html" onsubmit="return checkForm()">
+      <p class="item">
+        <lable for="x_uname">用户名</lable>
+        <input class="intext" type="text" id="x_uname" name="name" value="" placeholder="注册成功后不可修改">
+        <i></i>
+      </p>
+      <p class="item">
+        <lable for="x_pwd" placeholder="6-20位">密码</lable>
+        <input class="intext"  type="password" id="x_pwd" name="pwd" value="">
+          <i></i>
+      </p>
+      <p class="item">
+        <lable for="x_pwd2">确认密码</lable>
+        <input class="intext" type="password" id="x_pwd2" name="repwd" value="">
+        <i></i>
+      </p>
+      <p class="item">
+        <lable for="x_mbphone">手机号</lable>
+        <input class="intext" type="text" id="x_mbphone" name="mbphone" value="">
+        <i></i>
+      </p>
+      <p class="item">
+        <lable for="x_email">email</lable>
+        <input class="intext" type="text" id="x_email" name="email" value="">
+        <i></i>
+      </p>
+      <p class="item citys" id="location">
+        <lable for="x_address">地址</lable>
+        <select class="aree" name="province"></select>
+        <select class="aree" name="city"></select>
+        <select class="aree" name="area"></select>
+        <script type="text/javascript">
+            if(remote_ip_info){
+                $('#location').citys({province:remote_ip_info['province'],city:remote_ip_info['city'],area:remote_ip_info['district']});
+            }
+        </script>
+        <i style="color:#999;">您现在的位置,地址插件需联网使用。</i>
+      </p>
+      <p class="item sub">
+        <input type="submit"  value="立即注册" class="submit" id="quest">
+        <i></i>
+      </p>
+
+  </form>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

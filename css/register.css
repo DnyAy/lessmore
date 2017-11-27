@@ -1,0 +1,107 @@
+html body, html h1, html h2, html h3, html h4, html h5, html h6, html hr, html p, html blockquote, html dl, html dt, html dd, html ul, html ol, html li, html pre, html form, html fieldset, html legend, html button, html input, html textarea, html th, html td {
+  margin: 0;
+  padding: 0; }
+html body, html button, html input, html select, html textarea {
+  font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+body{
+  position: relative;
+  background-color:#f0f0f0;
+  height: 100%;
+}
+html ul, html ol {
+  list-style: none; }
+html a {
+  text-decoration: none; }
+html a:hover {
+   text-decoration: none;}
+ html input{
+ 	outline: 0;
+ }
+ html img{
+   border: none;
+ }
+input{
+   filter:chroma(color=#000000);
+}
+
+/*注册页面*/
+.warpper{
+  width: 854px;
+  margin:90px auto 0 auto;
+  text-align: center;
+  padding-bottom: 80px;
+  height: 550px;
+  background: #fff;
+  position: relative;
+}
+.warpper.ok{
+  width: 450px;
+  height: 200px;
+}
+.warpper.ok a{
+  color: #ff6700
+}
+.warpper h4{
+  color: #333;
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 40px 0 30px 0;
+}
+.warpper .item{
+  position: relative;
+  margin: auto;
+  margin-bottom: 5px;
+  height:55px;
+}
+.warpper p i{
+  display: block;
+  font-style: normal;
+  color: #ff6700;
+}
+.warpper lable{
+  width: 60px;
+  text-align: right;
+  display: inline-block;
+  color: #555;
+  margin-bottom: 3px;
+}
+.warpper .intext{
+  width: 265px;
+  height: 20px;
+  margin-left: 10px;
+  padding:5px;
+  color: #666;
+  border: 1px solid #e8e8e8;
+}
+.warpper .intext:focus{
+  border: 1px solid #ff6700;
+}
+.submit{
+  width: 265px;
+  height: 43px;
+  margin: auto;
+  line-height: 42px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #e8e8e8;
+  background: #ff6700;
+}
+.submit:hover{
+  background: #fe984c;
+}
+#location .aree{
+  height: 30px;
+  margin-left: 10px;
+  padding:3px;
+  color: #666;
+  border: 1px solid #e8e8e8;
+  display: inline-block;
+}
+#location .aree:focus{
+  outline: 1px solid #ff6700;
+}
+.item.sub{
+  height: 70px;
+}
